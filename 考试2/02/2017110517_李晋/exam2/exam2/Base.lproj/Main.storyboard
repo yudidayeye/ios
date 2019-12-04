@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="exam2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qs4-3g-3Zo">
+                                <rect key="frame" x="267" y="674" width="56" height="36"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="56" id="Cu9-3t-Red"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="清空">
+                                    <color key="titleColor" red="0.4901338871" green="0.72199968969999995" blue="0.60118318569999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="clear:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dl7-AT-fba"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please input your username?" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4bc-Fw-iIi">
+                                <rect key="frame" x="45" y="538" width="324" height="34"/>
+                                <color key="backgroundColor" red="0.8086362770948532" green="1" blue="0.86379733853221985" alpha="0.65293236301369861" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="ZSp-y1-kTC"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Vw-h8-hKH">
+                                <rect key="frame" x="271" y="58" width="123" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="改变背景颜色">
+                                    <color key="titleColor" red="0.95448924036054528" green="0.79321253372367595" blue="0.25253577435966712" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" weight="heavy"/>
+                                </state>
+                                <connections>
+                                    <action selector="changeColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WBT-bl-wcl"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="feiji" translatesAutoresizingMaskIntoConstraints="NO" id="XeV-6l-y74">
+                                <rect key="frame" x="36" y="153" width="342" height="334"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="342" id="1mC-VN-qCQ"/>
+                                    <constraint firstAttribute="height" constant="334" id="4eq-f8-hxe"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please input your password?" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bTj-fN-ktZ">
+                                <rect key="frame" x="45" y="603" width="324" height="34"/>
+                                <color key="backgroundColor" red="0.80863627709999997" green="1" blue="0.86379733849999996" alpha="0.65293236300000002" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="RYg-Vx-PnC"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HVe-bj-cFj">
+                                <rect key="frame" x="91" y="674" width="56" height="36"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="56" id="G18-Ml-Yi9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="登录">
+                                    <color key="titleColor" red="0.4901338871" green="0.72199968969999995" blue="0.60118318569999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" weight="heavy"/>
+                                </state>
+                                <connections>
+                                    <action selector="login:" destination="BYZ-38-t0r" eventType="touchUpInside" id="leC-qj-oYm"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.56112625357070922" green="0.82657614910057953" blue="0.68826024389813978" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="HVe-bj-cFj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="91" id="71T-qs-Qp0"/>
+                            <constraint firstItem="Qs4-3g-3Zo" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="HVe-bj-cFj" secondAttribute="trailing" constant="8" symbolic="YES" id="8B8-Bf-HyK"/>
+                            <constraint firstItem="6Vw-h8-hKH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="14" id="9O9-yt-iyy"/>
+                            <constraint firstItem="XeV-6l-y74" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="CD1-cz-HM8"/>
+                            <constraint firstItem="6Vw-h8-hKH" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" symbolic="YES" id="F6u-GM-9DU"/>
+                            <constraint firstItem="4bc-Fw-iIi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="45" id="GwJ-O2-dU4"/>
+                            <constraint firstItem="XeV-6l-y74" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="109" id="U4o-0l-fyh"/>
+                            <constraint firstItem="Qs4-3g-3Zo" firstAttribute="top" secondItem="bTj-fN-ktZ" secondAttribute="bottom" constant="37" id="Ut1-p7-cGa"/>
+                            <constraint firstItem="bTj-fN-ktZ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="gKi-HM-oSO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Qs4-3g-3Zo" secondAttribute="trailing" constant="91" id="hTl-RK-THN"/>
+                            <constraint firstItem="bTj-fN-ktZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="45" id="lU9-VX-zvJ"/>
+                            <constraint firstItem="4bc-Fw-iIi" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="lfD-Sj-Yxp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6Vw-h8-hKH" secondAttribute="trailing" constant="20" id="oK0-so-bYd"/>
+                            <constraint firstItem="bTj-fN-ktZ" firstAttribute="top" secondItem="4bc-Fw-iIi" secondAttribute="bottom" constant="31" id="qLY-du-11S"/>
+                            <constraint firstItem="HVe-bj-cFj" firstAttribute="top" secondItem="bTj-fN-ktZ" secondAttribute="bottom" constant="37" id="srw-PC-XSn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="bTj-fN-ktZ" secondAttribute="bottom" constant="225" id="wkk-2f-YVD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="bgView" destination="8bC-Xf-vdC" id="RBi-kw-ZdJ"/>
+                        <outlet property="clearButton" destination="Qs4-3g-3Zo" id="7hO-CI-w17"/>
+                        <outlet property="loginButton" destination="HVe-bj-cFj" id="h68-KR-5S4"/>
+                        <outlet property="passwordTF" destination="bTj-fN-ktZ" id="bkD-fD-SfK"/>
+                        <outlet property="planeImage" destination="XeV-6l-y74" id="rWU-3h-9yc"/>
+                        <outlet property="userTF" destination="4bc-Fw-iIi" id="276-SX-j9k"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="feiji" width="500" height="500"/>
+    </resources>
+</document>
